@@ -1,9 +1,11 @@
 export default function loadState(){
+    var GAME_WIDTH = 640;
+	var GAME_HEIGHT = 960;
     return{
         preload: function(){
             // set background color and preload image
             this.stage.backgroundColor = '#B4D9E7';
-            this.preloadBar = this.add.sprite((Candy.GAME_WIDTH-311)/2, (Candy.GAME_HEIGHT-27)/2, 'preloaderBar');
+            this.preloadBar = this.add.sprite((GAME_WIDTH-311)/2, (GAME_HEIGHT-27)/2, 'preloaderBar');
             this.load.setPreloadSprite(this.preloadBar);
             // load images
             this.load.image('background', 'img/background.png');
